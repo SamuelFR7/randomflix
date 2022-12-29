@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html {
+        @apply text-white font-sans bg-background bg-fixed;
+        font-size: 62.5%;
+    }
+}

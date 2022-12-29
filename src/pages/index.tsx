@@ -2,12 +2,7 @@
 import { Title } from '../components/Title'
 import { Logo } from '../components/Logo'
 import { useState } from 'react'
-
-interface MovieProps {
-  title: string
-  overview: string
-  poster_path: string
-}
+import Movie, { MovieProps } from '../components/Movie'
 
 export default function Homepage() {
   const [movie, setMovie] = useState<MovieProps>()
@@ -24,14 +19,11 @@ export default function Homepage() {
     <div className="flex flex-col items-center mt-[126px] gap-[30px]">
       <Title />
       {movie && (
-        <ul>
-          <li>{movie.title}</li>
-          <li>{movie.overview}</li>
-          <img
-            src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-            alt="Movie"
-          />
-        </ul>
+        <Movie
+          title={movie.title}
+          overview={movie.overview}
+          poster_path={movie.poster_path}
+        />
       )}
       <button
         onClick={handleGetMovie}

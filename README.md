@@ -1,4 +1,5 @@
 # TODO
 
-- [ ] Responsividade
-- [ ] Unidades de spacing e fontSize no tailwind.config.js
+- [X] Max lines in movie overview
+- [ ] Responsivity
+- [ ] Spacing and fontsizes on tailwind.config.js

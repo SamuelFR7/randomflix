@@ -8,3 +8,12 @@
         font-size: 62.5%;
     }
 }
+
+@layer utilities {
+    .max-overview {
+        display: -webkit-box;
+        -webkit-line-clamp: 9;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}

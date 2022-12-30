@@ -6,15 +6,15 @@ export interface MovieProps {
 
 export default function Movie({ overview, poster_path, title }: MovieProps) {
   return (
-    <div className="flex max-w-[630px] gap-[34px] flex-col md:flex-row items-center md:items-start px-[25px] md:px-0">
+    <div className="flex max-w-[63rem] gap-9 flex-col md:flex-row items-center md:items-start px-6 md:px-0">
       <img
-        className="w-[171px] h-[244px] mt-10"
+        className="w-[17.1rem] h-[24.4rem] mt-8"
         src={`https://image.tmdb.org/t/p/w500${poster_path}`}
         alt="Movie"
       />
-      <div className="flex flex-col gap-4 items-center md:items-start ">
-        <h2 className="font-bold text-[20px]">{title}</h2>
-        <p className="text-[16px] max-overview">{overview}</p>
+      <div className="flex flex-col gap-4 items-center md:items-start">
+        <h2 className="font-bold text-lg">{title}</h2>
+        <p className="text-md max-overview">{overview}</p>
       </div>
     </div>
   )

@@ -8,6 +8,28 @@ module.exports = {
     fontFamily: {
       sans: 'Poppins, sans-serif'
     },
+    fontSize: {
+      xsm: '1.2rem',
+      sm: '1.4rem',
+      md: '1.6rem',
+      lg: '2rem',
+      xlg: '4rem'
+    },
+    spacing: {
+      0: "0",
+      1: "0.4rem",
+      2: "0.8rem",
+      3: "1.2rem",
+      4: "1.6rem",
+      5: "2rem",
+      6: "2.4rem",
+      7: "2.8rem",
+      8: "3.2rem",
+      9: "3.6rem",
+      10: "4rem",
+      11: "4.4rem",
+      12: "4.8rem",
+    },
     colors: {
       white: '#fff',
       transparent: 'transparent',

@@ -12,7 +12,7 @@ export default function Homepage() {
 
   async function handleGetMovie() {
     setLoading(true)
-    const getMovie = await fetch(`http://localhost:3000/api/movie`)
+    const getMovie = await fetch(`/api/movie`)
       .then((response) => response.json())
       .then((data: MovieProps) => data)
 

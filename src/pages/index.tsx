@@ -21,7 +21,7 @@ export default function Homepage() {
   }
 
   return (
-    <div className="flex flex-col items-center mt-[126px] gap-[30px]">
+    <div className="flex flex-col items-center mt-[50px] md:mt-[126px] mb-[50px] md:mb-0 gap-[30px]">
       <Title />
       {!loading && movie ? (
         <Movie
@@ -43,9 +43,9 @@ export default function Homepage() {
         <Logo width={36} height={25} />
         <span>Encontrar filme</span>
       </button>
-      <span className="text-center text-[14px]">
-        Clique em {'"Encontrar filme"'} que traremos informações <br />
-        de algum filme para você assistir hoje
+      <span className="text-center text-[14px] px-[20px] md:px-0 max-w-[381px]">
+        Clique em {'"Encontrar filme"'} que traremos informações de algum filme
+        para você assistir hoje
       </span>
     </div>
   )

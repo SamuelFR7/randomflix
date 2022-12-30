@@ -2,5 +2,5 @@
 
 - [X] Max lines in movie overview
 - [X] Retry if fetch fails
-- [ ] Responsivity
+- [X] Responsivity
 - [ ] Spacing and fontsizes on tailwind.config.js
